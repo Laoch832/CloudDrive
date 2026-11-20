@@ -1,5 +1,14 @@
 {
   "name": "cloud-drive-engine-lab",
   "private": true,
-  "engines": { "node": "24.x" }
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "npm@11.9.0",
+  "scripts": {
+    "check": "node --check api/files.mjs && node --check api/platforms.mjs && node --check api/probe.mjs && node --check lib/files.mjs"
+  },
+  "devDependencies": {
+    "turbo": "2.11.13"
+  }
 }
